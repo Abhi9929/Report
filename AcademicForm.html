@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="utils.css">
+      <link rel="stylesheet" href="table.css" />
+      <script src="script.js" defer></script>
+      <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+      <!-- ******** Header ******* -->
+      <div class="header">
+        <div class="center">
+            <div class="radio_box  flex  flex-dir">
+                  <label class="label-elem" for="select">Institute</label>
+                  <input type="radio" name="academics" id="institute"  class="academics" >
+            </div>
+            <div class="radio_box  flex  flex-dir">
+                  <label class="label-elem"  for="select">School</label>
+                  <input type="radio" name="academics" id="school"  class="academics" >
+            </div>
+            <div class="radio_box  flex  flex-dir">
+                  <label class="label-elem" for="select">College</label>
+                  <input type="radio" name="academics" id="college"  class="academics" >
+            </div>
+         </div>
+      </div>
+
+  <!-- ******** Main BOX ******* -->
+  <main class="main">
+      <form action="" id="main_form">
+            <div class="detail-box  flex align-item">
+                  <label  class="w5"    id="academic_type">Schooling:  </label><input type="text" ></input>
+            </div>
+            
+            <div class="detail-box flex align-item">
+                  <label class="w5" >Student Name:  </label><input type="text" id="Stdname" ></input> 
+            </div>
+            
+            <div class="detail-box flex align-item">
+                  <label class="w5">Father Name:  </label><input type="text" id="Fthrname" ></input> 
+            </div>
+            
+            <div class="detail-box flex align-item">
+                  <label class="w2">From:</label>
+                  <input id="session_from" type="number" placeholder="YYYY" min="2015" max="2025">
+                  <label class="w3">To:</label>
+                  <input id="session_to" type="number" placeholder="YYYY" min="2016" max="2030">
+            </div>
+            
+            <div class="detail-box flex align-item">
+                  <label  class="w5" id="courses">Course:</label>
+
+                        <select name="" id="slct_course" disabled ></select>
+                        <select name="Session" id="college_session" class="course-box">
+                              <option value="" disabled selected>Select a course</option>
+                              <option value="btech">B.Tech</option>
+                              <option value="bca">BCA</option>
+                              <option value="mba">MBA</option>
+                        </select>
+                        <select name="Session" id="school_session" class="course-box">
+                              <option value="" disabled selected>Select Stream</option>
+                              <option value="arts">Arts</option>
+                              <option value="sci">Science</option>
+                              <option value="comm">Commerce</option>
+                        </select>
+                        <select name="Session"id="institute_session" class="course-box">
+                              <option value="" disabled selected>Select a Institute</option>
+                              <option value="hotel">Hotel Management</option>
+                              <option value="programming">Programming</option>
+                        </select>
+            </div>
+            
+            <div id="marks_data">
+            </div>
+      </form>   
+      <div class="btnBox ">
+            <button  class="submitBtn" >Submit</button>
+      </div>
+  </main>
+  </div>
+
+
+  <!-- *********** Report Card *********** -->
+  <div class="res-container">
+      <div class="hero">
+        <div class="hero-text">
+          <h2>Student Report Card</h2>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table class="tb tb-1">
+          <tr>
+            <td id="student_name">Name:</td>
+            <td id="session_year">Session:</td>
+          </tr>
+          <tr>
+            <td id="father_name">Father's Name:</td>            
+            <td id="crse">Course:</td>
+          </tr>
+        </table>
+
+        <table class="tb tb-2" id="table2">
+        </table>
+        <table class="tb tb-3">
+          <tr>
+            <th>Overall Marks</th>
+            <td id="overallMarks">-</td>
+            <th>Percentage</th>
+            <td id="percentage">-</td>
+            <th>Grade</th>
+            <td id="grade">-</td>
+          </tr>
+        </table>
+
+        <hr />
+
+        <table class="tb tb-4">
+          <tr>
+            <th>Marks Range</th>
+            <th>Grade</th>
+          </tr>
+          <tr>
+            <td>91-100</td>
+            <td>A1</td>
+          </tr>
+          <tr>
+            <td>81-90</td>
+            <td>A2</td>
+          </tr>
+          <tr>
+            <td>71-80</td>
+            <td>B1</td>
+          </tr>
+          <tr>
+            <td>61-70</td>
+            <td>B2</td>
+          </tr>
+          <tr>
+            <td>51-60</td>
+            <td>C1</td>
+          </tr>
+          <tr>
+            <td>41-50</td>
+            <td>C2</td>
+          </tr>
+          <tr>
+            <td>33-40</td>
+            <td>D</td>
+          </tr>
+          <tr>
+            <td>32 & Below</td>
+            <td>E (Needs Improvement)</td>
+          </tr>
+        </table>
+      </div>
+      <button type="button" class="res-btn">Print Result</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.flex {
+    display: flex;
+}
+.flex-dir {
+    flex-direction: row-reverse;
+}
+align-item {
+    align-items: center;
+}
+justify-center {
+    justify-content: center;
+}
+.flx-col {
+    flex-direction: column;
+}
+.w2 {
+    min-width: 50px;
+    /* border: 2px solid red; */
+}
+.w3 {
+    min-width: fit-content;
+    /* border: 2px solid red; */
+}
+.w5 {
+    /* border: 2px solid red; */
+    min-width: 120px;
+}
+.w6 {
+    min-width:  180px;
+}

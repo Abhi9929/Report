@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #dadada;
+  font-family: sans-serif;
+  /* background-color: #313131;
+  color: white; */
+}
+.res-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0.5rem auto;
+  border: 2.5px solid #eee;
+  text-align: center;
+  padding-inline: 1rem;
+  border: 2px solid #000000a2;
+}
+.hero {
+  text-transform: uppercase;
+}
+.hero-text h2 {
+  font-size: 2rem;
+  padding: 1rem 0 0;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+.table-container {
+  width: 100%;
+  margin-top: 1rem;
+  padding-inline: 0.5rem;
+}
+table.tb {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1.75rem;
+}
+td,
+th {
+  border: 2px solid rgb(0, 0, 0);
+  text-align: left;
+  width: 50%;
+  height: 30px;
+  padding: 8px;
+}
+.tb-2 td,
+.tb-2 th {
+  width: 38%;
+  text-align: center;
+}
+
+table.tb-3 {
+  border-color: #333;
+  /* border: 0; */
+}
+.tb-3 th,
+.tb-3 td {
+  padding: 5px 3px;
+  text-align: center;
+}
+.tb-3 th {
+  max-width: 20%;
+  font-weight: bold;
+}
+.tb-3 td {
+  max-width: 15%;
+}
+
+table.tb-4 {
+  width: 80%;
+  margin: 1rem auto;
+}
+table.tb-4 td,
+table.tb-4 th {
+  text-align: center;
+  padding: 5px;
+  height: 20px;
+  font-size: 0.8rem;
+}
+table.tb-4 th {
+  font-size: 0.95rem;
+}
+
+.res-btn {
+  background-color: #9f68e0;
+  border: 0;
+  margin-block-end: 1rem;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 8px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: scale 0.2s ease;
+}
+.res-btn:active {
+  transform: scale(0.98);
+}
+.res-btn:focus {
+  outline: 0;
+}
+
+.res-container {
+  display: none;
+}
+
+#darkBg {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+
+@media (width <= 700px) {
+  .hero-text h2 {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+  }
+  table.tb tr td,
+  table.tb tr th {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+  
+  table.tb-1 tr td,
+  table.tb-1 tr th {
+    width: 60%;
+  }
+  table.tb-2 tr td,
+  table.tb-2 tr th {
+    width: 1fr;
+  }
+  table.tb-3 tr td,
+  table.tb-3 tr th {
+    width: 1fr;
+    font-size: 0.7rem;
+  }
+  table.tb-4 {
+    width: 95%;
+  }
+  table.tb-4 tr td,
+  table.tb-4 tr th {
+    padding: 2px;
+    height: 10px;
+    font-size: 0.7rem;
+  }
+  .res-btn {
+    font-size: 14px;
+    padding: 5px 20px;
+  }
+}
+
+@media (width <= 450px) {
+  
+  .hero-text h2 {
+    font-size: 1rem
+  }
+
+  table.tb tr td,
+  table.tb tr th {
+    font-size: 0.6rem;
+    padding: 3px;
+  }
+}
